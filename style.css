@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8e1f8; /* Light pastel pink background */
+    color: #4b0082; /* Dark pastel purple text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    padding: 50px;
+    text-align: center; /* Center text */
+}
+
+.profile-image {
+    border-radius: 10%;
+    width: 200px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    object-fit: cover;
+    margin: 10px; /* Add some spacing around the image */
+    float: left; /* Move the image to the left */
+    animation: bounce 2s infinite; /* Animation effect */
+    margin-top: 10px;
+}
+
+.header h1, .header p {
+    /* Additional styling for text */
+    margin: 0;
+}
+
+.header h1 {
+    clear: both; /* Clear the float above */
+    margin-top: 70px; /* Adjust to move the title up if needed */
+}
+
+.nav {
+    background-color: #d1c6e7; /* Pastel violet navigation */
+    padding: 15px 0;
+    clear: both; /* Clear floats from the header */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #4b0082; /* White text */
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+nav a:hover {
+    color: #f8e1f8; /* Change color on hover */
+}
+
+section {
+    margin: 20px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    animation: fadeIn 1s; /* Fade-in animation */
+}
+
+.seminars-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #d1c6e7; /* Left border color */
+}
+
+.seminars-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4b0082; /* Dark purple button */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.seminars-link:hover {
+    background-color: #8532b8; /* Lighter purple on hover */
+}
+
+.email {
+    color: #4b0082; /* Email link color */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d1c6e7; /* Pastel violet footer */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
